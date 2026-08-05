@@ -33,6 +33,8 @@ After applying the configuration, Terraform provides the following outputs:
 | `cluster_name` | Name of the GKE cluster |
 | `cluster_location` | Region or zone where the GKE cluster is deployed |
 
+View the outputs:
+
 ```bash
 terraform output
 ```
