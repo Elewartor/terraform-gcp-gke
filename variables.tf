@@ -12,6 +12,7 @@ variable "gke_config" {
   }
 }
 
+
 # Zones the primary node pool may place nodes in. Multi-zone + location_policy
 # "ANY" lets the autoscaler grow whichever zone has capacity, so a single-zone
 # stockout (e.g. e2-standard-4 out in us-central1-a) no longer blocks scale-up.

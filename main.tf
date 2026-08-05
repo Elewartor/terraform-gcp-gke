@@ -39,6 +39,7 @@ resource "google_container_cluster" "primary" {
   }
 }
 
+
 # Creates a node pool
 resource "google_container_node_pool" "primary_nodes" {
   name     = "project-node-pool"
@@ -68,6 +69,7 @@ resource "google_container_node_pool" "primary_nodes" {
     ignore_changes = [initial_node_count, autoscaling[0].total_min_node_count]
   }
 }
+
 
 # Optional local kubeconfig setup for users running Terraform from their own machine.
 resource "null_resource" "set_kubeconfig" {
